@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   android:background="@drawable/black_background"
+    tools:context=".AddActivity" >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+
+         <TableLayout
+             android:id="@+id/tableLayout1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:stretchColumns="1"
+              >
+
+          <TableRow 
+              android:layout_marginTop="15dip"
+              >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="AppName"
+             android:textColor="#ff0000"
+              />
+
+         <EditText
+             android:id="@+id/etappname"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textMultiLine"
+            android:hint = "AppName"
+            android:textColor="#ff7f00"
+            />
+           </TableRow>
+             
+           <TableRow 
+               android:layout_marginTop="15dip"
+               >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Brief"
+             android:textColor="#ff0000" />
+
+         <EditText
+             android:id="@+id/etbrief"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textMultiLine"
+            android:hint = "Brief on App"
+            android:textColor="#ff7f00"
+            />
+           </TableRow>
+             
+              <TableRow
+                  android:layout_marginTop="15dip"
+                   >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Description" 
+             android:textColor="#ff0000"/>
+
+         <EditText
+             android:id="@+id/etlongd"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textMultiLine"
+            android:hint = "About app Clearly"
+            android:textColor="#ff7f00"
+            />
+           </TableRow>
+             
+           <TableRow 
+               android:layout_marginTop="15dip"
+               >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Version" 
+             android:textColor="#ff0000"/>
+
+         <EditText
+             android:id="@+id/etversion"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:hint = "App Version"
+            android:inputType="text"
+            android:textColor="#ff7f00"
+            />
+           </TableRow>   
+             
+             
+        <TableRow 
+            android:layout_marginTop="15dip"
+            >     
+             
+             <Button
+                 android:id="@+id/bUpload"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Add App Pic" 
+                 android:textColor="#00ff00"
+                 />
+             
+             
+         
+		</TableRow>
+        
+        <TableRow 
+            android:layout_marginTop="15dip"
+            >
+        <ImageView
+             android:id="@+id/ivSelected"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             android:src="@drawable/androidimage" />
+
+		 
+        </TableRow >
+   
+        <Button
+                 android:id="@+id/bSave"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Save" 
+                 android:textColor="#00ff00"
+                 />
+        
+         <Button
+                 android:id="@+id/bList"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Go to Home" 
+                  android:textColor="#00ff00"
+                 />
+       
+        
+    </TableLayout>
+
+     </LinearLayout>
+</ScrollView>
+</RelativeLayout>

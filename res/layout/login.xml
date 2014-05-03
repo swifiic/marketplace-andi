@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		 android:background="@drawable/black_background">
+  		
+  		<!--  Header  Starts-->
+  		<LinearLayout android:id="@+id/loginlayout"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				
+  				android:paddingTop="5dip"
+  				android:paddingBottom="5dip">
+  				<!-- Logo Start-->
+
+  				<ImageView
+  				    android:layout_width="match_parent"
+  				    android:layout_height="wrap_content"
+  				    android:layout_marginLeft="10dip"
+  				    android:src="@drawable/logo" />
+
+  				<!-- Logo Ends -->
+  		</LinearLayout>
+  		<!--  Header Ends -->  
+  		
+  		
+  		<!-- Login Form -->
+		<LinearLayout
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip"
+		  android:layout_below="@+id/loginlayout">
+		  <!--  Email Label -->
+		  <TextView 
+		      	android:id="@+id/tvusername"
+		      	android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#ff0000"
+		  		android:textSize="20dip"
+		  		android:layout_marginTop="25dip"
+		  		android:text="Username"/>
+		  <EditText
+		        android:id="@+id/eusername"
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="10dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:textColor="#ff7f00"
+		  		android:singleLine="true"/>
+		  <!--  Password Label -->
+		  <TextView
+		      android:id="@+id/tvpassword"
+		       android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#ff0000"
+		  		android:textSize="20dip"
+		  		android:text="Password"/>
+		  <EditText 
+		       android:id="@+id/epassword"
+		      android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="10dip"
+		  		android:singleLine="true"
+		  		android:textColor="#ff7f00"
+		  		android:password="true"/>
+		  <!-- Login button -->	
+		  <Button
+		       android:id="@+id/elogin" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="25dip"
+		  		android:textColor="#00ff00"
+		  		android:text="@string/action_sign_in_register"/>
+		  
+		    
+		</LinearLayout>
+  		<!-- Login Form Ends --> 		
+  		
+  </RelativeLayout>
+</ScrollView>

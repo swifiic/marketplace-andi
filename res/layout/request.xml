@@ -1,0 +1,185 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/black_background"
+    tools:context=".RequestActivity" 
+
+    >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+
+         <TableLayout
+             android:id="@+id/tableLayout1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:stretchColumns="1"
+              >
+
+          <TableRow 
+              android:layout_marginTop="15dip"
+              >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="UserName"
+             android:textColor="#ff0000" />
+
+         <EditText
+            android:id="@+id/eusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:hint = "userName"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"    
+            android:maxLines="1"
+            android:singleLine="true" 
+            android:textColor="#ff7f00"
+            />
+           </TableRow>
+             
+          
+          
+          
+          <TableRow 
+              android:layout_marginTop="15dip"
+              >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Mobile" 
+             android:textColor="#ff0000"/>
+
+         <EditText
+             android:id="@+id/ephone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:hint = "enter ur phone number"
+            android:inputType="phone"
+            android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:textColor="#ff7f00"
+                android:maxLines="1"
+                android:singleLine="true" 
+            
+            />
+           </TableRow>
+          
+          
+          
+           <TableRow 
+               android:layout_marginTop="15dip"
+               >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="AppName" 
+             android:textColor="#ff0000"/>
+
+         <EditText
+             android:id="@+id/eappname"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:hint = "App Name"
+            android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                
+                android:maxLines="1"
+                android:singleLine="true" 
+            android:textColor="#ff7f00"
+            />
+           </TableRow>
+             
+              <TableRow 
+                  android:layout_marginTop="15dip"
+                  >
+             <TextView
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Description"
+             android:textColor="#ff0000" />
+
+         <EditText
+             android:id="@+id/ebrief"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:hint = "About app Clearly"
+           
+            android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+               android:inputType="textMultiLine"
+               
+                android:singleLine="true" 
+            android:textColor="#ff7f00"
+            />
+           </TableRow>
+          
+              <TableRow
+                  android:layout_marginTop="15dip">
+                  <Button
+                   android:id="@+id/bUpload"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Your Pic"
+                   android:textAlignment="center"
+                   android:textColor="#00ff00" />
+
+                 <Button
+             android:id="@+id/bSave"
+             android:layout_width="131dp"
+             android:layout_height="wrap_content"
+             android:text="Save"
+             android:textAlignment="center"
+             android:textColor="#00ff00" />
+                  
+                  </TableRow>
+	
+	<ImageView
+            android:id="@+id/ivSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile" 
+            android:layout_marginTop="15dip"/>
+              
+              
+         
+
+         
+
+
+         <Button
+             android:id="@+id/bList"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="See all Requests"
+             android:visibility="invisible"
+             android:layout_marginTop="15dip"
+             android:textColor="#00ff00" />
+         
+         
+          </TableLayout>
+ </LinearLayout>
+ </ScrollView>
+     
+ </RelativeLayout>
